@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz Pengetahuan Umum</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="quiz.html" class="nav-link">Quiz</a>
+    </nav>
+    <div class="container">
+        <h1>Quiz Pengetahuan Umum</h1>
+        <div id="quiz-container">
+            <div id="question-container">
+                <div id="question"></div>
+                <div id="answers"></div>
+            </div>
+            <div id="feedback"></div>
+            <button id="next-btn" disabled>Soal Berikutnya</button>
+        </div>
+        <div id="result-container" class="hidden">
+            <h2>Skor Anda: <span id="score"></span></h2>
+            <button id="restart-btn">Mulai Ulang Quiz</button>
+            <h3>Riwayat Quiz:</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

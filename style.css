@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #3498db;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d1e7ff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-start, button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-start:hover, button:hover {
+    background-color: #2980b9;
+}
+
+#question {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.answer-btn:hover {
+    background-color: #d0d7de;
+}
+
+.answer-btn.correct {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    color: white;
+}
+
+.answer-btn.incorrect {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+    color: white;
+}
+
+#feedback {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    min-height: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-container h2 {
+    margin-bottom: 15px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding-left: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#history-list li {
+    background-color: #ecf0f1;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
